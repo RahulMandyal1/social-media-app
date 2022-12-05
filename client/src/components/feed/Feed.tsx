@@ -13,7 +13,14 @@ const Feed = () => {
   }, [])
 
   return (
-    <Box flex={3} sx={{ padding: '16px 5%', boxSizing: 'border-box' }}>
+    <Box
+      flex={3}
+      sx={{
+        padding: '16px 5%',
+        boxSizing: 'border-box',
+        display: { sm: 'block' },
+      }}
+    >
       {isLoading ? (
         <Stack spacing={1}>
           <Skeleton variant="text" height={100} />

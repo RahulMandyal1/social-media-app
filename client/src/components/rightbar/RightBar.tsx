@@ -20,6 +20,7 @@ const RightBar = () => {
       sx={{
         flex: '2 !important',
         width: '25%',
+        display: { xs: 'none', sm: 'block' },
       }}
     >
       <Box position={'fixed'} sx={{ padding: '16px' }}>

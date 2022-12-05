@@ -23,7 +23,11 @@ interface SideBarProps {
 
 const SideBar = (props: SideBarProps) => {
   return (
-    <Box component={'aside'} flex={1}>
+    <Box
+      component={'aside'}
+      flex={1}
+      sx={{ display: { xs: 'none', sm: 'block' } }}
+    >
       <Box position={'fixed'}>
         <List>
           <ListItem>

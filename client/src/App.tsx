@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Box>
+      <Box sx={{ boxSizing: 'border-box' }}>
         <Navbar />
         <Stack
           direction={'row'}
